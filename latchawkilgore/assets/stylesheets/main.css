@@ -1,3 +1,6 @@
+body{
+  background: #485935;
+}
 .company_name {
     background-color: #485935;
     font-size: 150%;
@@ -29,14 +32,44 @@ nav, a {
     padding: 1%;
 }
 
+.mission a:link {
+  color: #485935;
+}
+
+.mission {
+  display: flex;
+  justify-content: space-evenly;
+  align-self: auto;
+  padding: 3%;
+  width: 80%;
+  background-color:#CADBB7;
+  font-size: 180%;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mission p {
+  display:inline-block;
+  width: 45%;
+}
+
+.business_front {
+  align-self:center;
+  width: 45%;
+  float:left;
+}
+
+
 /* unvisited link */
 a:link {
-    color: #fbfbfb;
+    color: #ffffff;
   }
   
   /* visited link */
 a:visited {
-    color: #fbfbfb;
+    color: #ffffff;
 }
   
   /* mouse over link */
@@ -49,14 +82,7 @@ a:active {
     color: #485935;
 }
 
-.mission{
-  align-self: center;
-  padding: 3%;
-  width: 70%;
-  background-color:#CADBB7;
-  font-size: 180%;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+
 
 strong {
   font-weight: 550;
@@ -80,7 +106,7 @@ footer {
 }
 
 .summary_button{
-    font-size: 100%;
+    font-size: 85%;
     font-family:  Georgia, 'Times New Roman', Times, serif;
     font-weight: 400;
     background-color:#485935;
@@ -88,6 +114,7 @@ footer {
     margin-top: 2%;
     padding: 1%;
     color:white;
+    width:35%;
 }
 
 .summary_button:link {
@@ -114,8 +141,4 @@ footer {
     font-size: 150%;
     text-indent: 3%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-body {
-  background-color:#485935;
 }
