@@ -29,26 +29,33 @@
                 <p>Phone: 517-543-2960</p>
                 <p>Fax: 517-543-2979</p>
                 <p>Email: Info@latchaw.com</p>
-                <p>Facebook: https://www.facebook.com/latchawkilgorecpas</p>
+                <p>Facebook: <a href="https://www.facebook.com/latchawkilgorecpas">https://www.facebook.com/latchawkilgorecpas</a></p>
                 <p>Address: 118 S Cochran Ave, Charlotte, MI 48813</p>
             </section>
 
             <section class="contact_form">
                 <h3>Send us an Email!</h3>
-                <form class="email_form">
-                    <label for="customer_fname">First Name:</label>
-                    <input type="textarea" name="customer_fname">
+                <form action="https://api.web3forms.com/submit" method="POST">
+
+                    <!-- Replace with your Access Key -->
+                    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                
+                    <!-- Form Inputs. Each input must have a name="" attribute -->
+                    <input type="text" name="name" placeholder="Your Name" required>
                     <br>
-                    <label for="customer_lname">Last Name:</label>
-                    <input type="textarea" name="customer_lname">
+                    <input type="email" name="email" placeholder="Your Email" required>
                     <br>
-                    <label for="customer_email">Your Email Address:</label>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
                     <br>
-                    <input type="email" id="customer_email" name="customer_email">
-                    <br>
-                    <label for="message">Message to Us:</label>
-                    <br>
-                    <textarea id="message" name="message"></textarea>        
+                
+                    <!-- Honeypot Spam Protection -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                
+                    <!-- Custom Confirmation / Success Page -->
+                    <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+                
+                    <button type="submit">Submit Form</button>
+                
                 </form>
             </section>
 
