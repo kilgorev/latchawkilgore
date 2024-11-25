@@ -1,40 +1,38 @@
-body{
-  word-wrap: break-word;
-}
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
 body{
-  background-color: #cadbb7b4;
+  overflow-x: hidden;
+  background-color: #ffffff;
 }
+
+@font-face {
+  font-family: "Roboto";
+  src:url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
 
 .company_name {
-    background-color: #485935;
-    font-size: 150%;
+    background-color: #ffffff;
     text-align: center;
-    margin-top:-1%;
-    margin-left:-1%;
-    margin-right:-1%;
-    padding:2.5%;
-    align-self: center;
-    color: #fbfbfb;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    padding:2%;
+    color: #000000;
+    font-family: "Roboto";
 }
 
-nav {
-    background-color: #93A267;
-    font-size: 120%;
-    color:#fbfbfb;
-    font-family: Arial, Helvetica, sans-serif;
-    text-indent: 2%;
-    padding: 3%;
-    text-decoration-line: none;
-    margin-top:-1%;
-    margin-left:-1%;
-    margin-right:-1%;
+.company_name div {
+  font-size:x-small;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-nav, a:link {
-    text-decoration: none;
-    padding: 1%;
+.company_name div img{
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  width: 40px;
+  flex-shrink: 0;
+  margin-right: 20px;
+  margin-left: 40px;
 }
 
 .mission a:link {
@@ -47,66 +45,47 @@ nav, a:link {
 
 .mission {
   display: flex;
-  justify-content: space-evenly;
-  align-self: auto;
+  flex-direction: column;
+  align-items: center;
   padding: 3%;
-  width: 80%;
-  background-color:#CADBB7; 
+  width: 100%;
+  background-color:#ffffff; 
   font-family:Arial, Helvetica, sans-serif;
   margin-top: 5%;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 .mission p {
-  display:block;
-  width: 45%;
-  font-size: 180%;
+  width: 60%;
+  font-size: 160%;
+  font-weight: 300;
+  font-family: "Inter";
 }
 
-.business_front {
-  align-self:center;
-  width: 45%;
-  float:left;
+.mission h3 {
+  font-size: 250%;
+  font-weight: 100;
+  font-family: "Libre Baskerville";
 }
-
-
-/* unvisited link */
-a:link {
-    color: #ffffff;
-  }
-  
-  /* visited link */
-a:visited {
-    color: #ffffff;
-}
-  
-  /* mouse over link */
-a:hover {
-    color: #485935;
-}
-  
-  /* selected link */
-a:active {
-    color: #485935;
-}
-
 
 
 strong {
   font-weight: 550;
 }
 
+
 .summaries_of {
-    background-color: #CADBB7;
-    font-size: 190%;
-    font-weight: 470;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align:center;
-    padding: 5%;
-    margin-top: 8%;
-    margin-left:-1%;
-    margin-right:-1%;
+  background-color: #CADBB7;
+  font-size: 1.9rem;
+  font-weight: 470;
+  text-align: center;
+  padding: 5%;
+  margin-top: 8%;
+  max-width: 100%; /* Prevents overflow beyond the screen width */
+  box-sizing: border-box; /* Ensures padding doesn't push content out of bounds */
+  overflow-x: hidden; /* Prevent any horizontal scrolling in this section */
 }
 
 footer {
@@ -129,26 +108,27 @@ footer {
 .summary_button:link {
     color: #fbfbfb;
 }
-  
-  /* visited link */
+
+
 .summary_button:visited {
     color: #fbfbfb;
 }
   
-  /* mouse over link */
+
 .summary_button:hover {
     background-color:#93A267;
     transition: 0.3s;
 }
   
-  /* selected link */
+
 .summary_button:active {
     color: #485935;
 }
+   
 
 .title {
     text-indent: 3%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Libre Baskerville";
     margin-top: 1%;
 }
 
@@ -156,72 +136,79 @@ footer {
   font-size:300%;
 }
 
-/* Contact Us Form */
-.contact_form {
-  background-color: #CADBB7;
-  width:30%;
-  padding:2%;
-  width:fit-content;
-  margin-left:2%;
-  margin-top:2%;
-}
 
-.contact_form h3 {
-  text-align:center;
-}
-
-
-
-.hours {
-  background-color: #CADBB7;
-  width:fit-content;
-  padding:2%;
-  margin-left:2%;
-  margin-top:3%;
-  
-}
-
-.contact_info {
-  width:40%;
-  background-color: #CADBB7;
-  padding:2%;
-  margin-left:2%;
-  margin-top:2%;
-}
-
-.contact_main {
-  display: flex;
-  width:90%;
-}
-
-.employee_img {
-  width:30%;
-}
-
-.employee_desc{
-  padding-left:5%;
-  padding-right:5%;
-}
-
-.about_us_main {
-  margin-left: 5%;
-}
-
-.group_img {
-  width:70%;
-}
-
-.employee, .group {
-  background-color:#CADBB7;
+.select-menu {
+  margin-left: auto;
+  margin-right: 40px;
+  order: 2;
+  flex-direction: column; /* Stack the button and options vertically */
+  position: relative;
   align-items: center;
-  text-align: center;
-  align-self: center;
-  padding:2%;
-  margin-left:-5.5%;
-  margin-right:-1%;
-  margin-bottom: 5%;
+  justify-content: flex-start;
 }
 
-.employee_name {
-  padding-top: 1%;
+.select-btn {
+  background: #fff;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 8px;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  text-align: center;
 }
+
+.select-btn i {
+  font-size: 25px;
+  transition: 0.3s;
+}
+
+.select-menu.active .select-btn i {
+  transform: rotate(-180deg);
+}
+
+.options {
+  display: none; 
+  flex-direction: column;
+  position: absolute; 
+  top: 100%;
+  left: 0;
+  padding: 10px 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  width: 170px;
+}
+
+.select-menu.active .options {
+  display: block; 
+}
+
+.options .option {
+  display: flex;
+  cursor: pointer;
+  padding: 5px 16px;
+  border-radius: 8px;
+  align-items:center;
+  background: #fff;
+  width: 140px;
+}
+
+.options .option:hover {
+  background: #F2F2F2;
+}
+
+.option i {
+  font-size: 25px;
+  margin-right: 12px;
+}
+
+.option .option-text {
+  font-size: 18px;
+  color: #333;
+}
+

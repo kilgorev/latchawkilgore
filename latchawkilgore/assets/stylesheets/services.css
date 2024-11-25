@@ -1,0 +1,28 @@
+p{
+    font-size: large;
+}
+section, aside{
+    margin-left: 3%;
+}
+
+.contact_us_link:link{
+    color: darkgreen;
+    padding:0%;
+}
+
+.contact_us_link:visited{
+    color: darkgreen;
+}
+
+.contact_us_link:hover{
+    color: rgb(0, 0, 0);
+}
+
+.contact_us_link:active{
+    color: darkgreen;
+}
+
+
+.contact_us_link {
+    font-weight: 600;
+}

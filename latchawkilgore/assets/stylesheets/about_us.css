@@ -1,0 +1,42 @@
+.employee_img {
+    width:40%;
+  }
+  
+  .employee_desc{
+    text-align: center;
+    padding-left:5%;
+    padding-right:5%;
+  }
+  
+  .about_us_main {
+    margin-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .group_img {
+    width:70%;
+  }
+
+  .employee, .group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .employee_name {
+    padding-top: 1%;
+    margin-bottom: -5%;
+  }
+
+  .employee_email {
+    margin-bottom: -1%;
+    margin-top: -2%;
+  }
+
+.employee{
+  width: 40%;
+}
