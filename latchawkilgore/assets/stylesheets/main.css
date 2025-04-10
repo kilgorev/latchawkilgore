@@ -35,7 +35,7 @@ body{
   margin-left: 40px;
 }
 
-.mission a:link {
+a:link {
   color: #485935;
 }
 
@@ -212,3 +212,6 @@ footer {
   color: #333;
 }
 
+.footer_whole {
+  margin-top: 7%;
+}

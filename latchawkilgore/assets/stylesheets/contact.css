@@ -1,47 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
-section{
-    border-radius: 1%;
+@font-face {
+  font-family: "Roboto";
+  src:url(../fonts/Roboto/Roboto-Regular.ttf);
 }
+
+.contact_main {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.hours_and_info {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.contact_form, .contact_info, .hours{
+  word-wrap: break-word;
+  font-size: large;
+}
+
+article {
+  width: 45%;
+}
+
 .contact_form {
-    background-color: #CADBB7;
-    width:30%;
-    padding:2%;
-    width:fit-content;
-    margin-left:2%;
-    margin-top:2%;
+  font-family: "Libre Baskerville";
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  margin-right:2%;
+  margin-left: -2%;
+  height: 500px;
+  box-shadow:10px 10px #0f1c01b9;
+  background-color: #48593551;
+  font-size: x-large;
+}
+
+.contact_form h3 {
+  font-family: "Inter";
+  font-weight: 300;
+  margin-bottom: -.5em;
+}
+
+  input::placeholder, textarea::placeholder, input, textarea{
+    font-family: "Inter";
+    font-size: medium;
+    padding: 2%;
+    text-align: center;
+    font-weight: 200;
   }
-  
-  .contact_form h3 {
-    text-align:center;
+
+  .contact_form button {
+    margin-left: auto;
+    text-align: center;
+    padding: 3%;
+    font-size: medium;
+    font-family: "Inter";
+    font-weight: 300;
+    background-color: rgb(255, 255, 255);
   }
-  
-  
-  
+
+  input, textarea, button {
+    margin-bottom: 1.25em;
+    width: 60%;
+    border: 0;
+  }
+
   .hours {
-    background-color: #CADBB7;
     width:fit-content;
-    padding:2%;
-    margin-left:2%;
-    margin-top:3%;
     display: flex;
     align-items: center;
     flex-direction: column;
   }
 
-  .hours table{
-    align-items: center;
+
+  .hours th, .contact_info h3{
+    font-size: larger;
+    font-family: "Inter";
+    font-weight: 700;
+    text-align: left;
   }
   
+  .hours th {
+    text-indent:.35em;
+  }
+
+  .hours td {
+    padding: .5em;
+  }
+
   .contact_info {
-    width:40%;
-    background-color: #CADBB7;
-    padding:2%;
-    margin-left:2%;
+    width:80%;
+    margin-left:.5em;
     margin-top:2%;
-  }
-  
-  .contact_main {
-    display: flex;
-    width:90%;
   }
   

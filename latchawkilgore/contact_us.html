@@ -45,15 +45,8 @@
         </header>
 
         <main class="contact_main">
-            <section class="contact_info">
-                <p>Phone: 517-543-2960</p>
-                <p>Fax: 517-543-2979</p>
-                <p>Email: Info@latchaw.com</p>
-                <p>Facebook: <a href="https://www.facebook.com/latchawkilgorecpas">https://www.facebook.com/latchawkilgorecpas</a></p>
-                <p>Address: 118 S Cochran Ave, Charlotte, MI 48813</p>
-            </section>
 
-            <section class="contact_form">
+        <article class="contact_form">
                 <h3>Send us an Email!</h3>
                 <form action="https://api.web3forms.com/submit" method="POST">
 
@@ -72,16 +65,27 @@
                     <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                 
                     <!-- Custom Confirmation / Success Page -->
-                    <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+                    <input type="hidden" name="redirect" value="thank_you.html">
                 
-                    <button type="submit">Submit Form</button>
+                    <button type="submit">Send</button>
                 
                 </form>
+        </article>
+
+        <article class = "hours_and_info">
+
+            <section class="contact_info">
+                <h3>More Information</h3>
+                    <p>Phone: 517-543-2960</p>
+                    <p>Fax: 517-543-2979</p>
+                    <p>Email: Info@latchaw.com</p>
+                    <p>Facebook: <a href="https://www.facebook.com/latchawkilgorecpas">https://www.facebook.com/latchawkilgorecpas</a></p>
+                    <p>Address: 118 S Cochran Ave, Charlotte, MI 48813</p>
             </section>
 
             <section class="hours">
                 <table>
-                    <thead>Hours</thead>
+                    <th colspan="2">Hours</th>
                     <tbody>
                     <tr>
                         <td>Mondays-Thursday</td>
@@ -100,6 +104,9 @@
             </section>
         </main>
 
+    </article>
+
+    <footer class = "footer_whole">
         <footer class="footer_location">
             Latchaw &amp; Kilgore, CPA, PC. ® 118 S Cochran Ave, Charlotte, MI 48813
         </footer>
@@ -107,8 +114,7 @@
         <footer class="copyright">
             Website Designed by Victoria Kilgore
         </footer>
-
+    </footer>
         <script src="assets/javascript/main.js"></script>
-
     </body>
 </html>
