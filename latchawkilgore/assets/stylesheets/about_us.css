@@ -1,6 +1,6 @@
 .employee_img {
     width:40%;
-  }
+ }
   
   .employee_desc{
     text-align: center;
@@ -39,4 +39,10 @@
 
 .employee{
   width: 40%;
+}
+
+.employee_img, .group_img {
+  margin-top: 2em;
+  border-radius: 2%;
+  box-shadow:10px 10px 20px #0f1c01b9;
 }

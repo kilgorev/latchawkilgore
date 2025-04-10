@@ -9,23 +9,21 @@
 .contact_main {
   margin: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .hours_and_info {
   display: flex;
   flex-direction: column-reverse;
+  width: 40%;
+  margin-left: -10%;
 }
 
 .contact_form, .contact_info, .hours{
   word-wrap: break-word;
   font-size: large;
-}
-
-article {
-  width: 45%;
 }
 
 .contact_form {
@@ -35,12 +33,13 @@ article {
   text-align: center;
   flex-wrap: nowrap;
   justify-content: space-evenly;
-  margin-right:2%;
-  margin-left: -2%;
+  margin-left: -10%;
   height: 500px;
   box-shadow:10px 10px #0f1c01b9;
   background-color: #48593551;
   font-size: x-large;
+  width: 27%;
+  margin-top: -4%;
 }
 
 .contact_form h3 {
@@ -84,7 +83,7 @@ article {
   .hours th, .contact_info h3{
     font-size: larger;
     font-family: "Inter";
-    font-weight: 700;
+    font-weight: 500;
     text-align: left;
   }
   
