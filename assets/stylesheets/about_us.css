@@ -10,7 +10,7 @@
   
   .about_us_main {
     margin-left: 5%;
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
@@ -46,3 +46,4 @@
   border-radius: 2%;
   box-shadow:10px 10px 20px #0f1c01b9;
 }
+

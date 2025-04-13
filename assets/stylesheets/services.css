@@ -26,3 +26,17 @@ section, aside{
 .contact_us_link {
     font-weight: 600;
 }
+
+ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.li-heading {
+    border-style: solid;
+    background-color:  #48593551;
+    margin:3%;
+
+}
+
