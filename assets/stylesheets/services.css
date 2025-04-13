@@ -1,6 +1,7 @@
 p{
-    font-size: large;
+    font-size: x-large;
 }
+
 section, aside{
     margin-left: 3%;
 }
@@ -31,12 +32,16 @@ ol {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
+    padding: 0px;
 }
 
 .li-heading {
-    border-style: solid;
     background-color:  #48593551;
     margin:3%;
+    padding: 2%;
+}
 
+li {
+    font-size: x-large;
 }
 
