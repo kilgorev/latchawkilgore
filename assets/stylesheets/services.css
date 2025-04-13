@@ -4,6 +4,18 @@ p{
 
 section, aside{
     margin-left: 3%;
+    display: none;
+}
+
+ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0px;
+}
+
+li {
+    font-size: x-large;
 }
 
 .contact_us_link:link{
@@ -28,20 +40,10 @@ section, aside{
     font-weight: 600;
 }
 
-ol {
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-    padding: 0px;
-}
-
 .li-heading {
     background-color:  #48593551;
     margin:3%;
     padding: 2%;
 }
 
-li {
-    font-size: x-large;
-}
-
+.
